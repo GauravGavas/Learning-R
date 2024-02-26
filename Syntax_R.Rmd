@@ -1,0 +1,103 @@
+---
+title: "Basics_R"
+author: "Gaurav"
+date: "2024-02-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Simple calculation:
+
+```{r}
+25 * 4 + 9 / 3
+```
+
+Comments example:
+
+```{r}
+# multiplying 3 three times
+3 * 3 * 3
+```
+
+Data types:
+
+```{r}
+print('Gaurav') #string
+print(8) #integer
+print('8') #string
+```
+
+Variables:
+
+```{r}
+name <- 'Gaurav'
+age <- 30
+
+print(name)
+print(age)
+```
+
+Vectors:
+
+```{r}
+spring_months <- c('March', 'April', 'May', 'June')
+print(spring_months)
+
+phone <- c(262, 454, 52)
+print(phone)
+```
+
+Conditionals:
+
+```{r}
+night <- TRUE
+day <- FALSE
+
+if (day){
+  print('Go to sleep.')
+} else {
+  print('Wake up.')
+}
+```
+
+Comparison operators:
+
+```{r}
+56 >= 129
+56 != 129
+```
+
+Logical operators:
+
+```{r}
+weather <- 'cloudy'
+high_chances_of_rain <- TRUE
+
+print('Should I pack an umbrella?')
+
+if(weather == 'cloudy' & high_chances_of_rain == TRUE){
+  print('Yes, pack umbrella.')
+} else {
+  print('No need for unbrella.')
+}
+```
+
+Function:
+
+```{r}
+data <- c(120,22,22,31,15,120)
+unique_data <- unique(data)
+print(unique_data)
+
+solution <- sqrt(49)
+print(solution)
+
+round_up <- ceiling(3.14)
+round_down <- floor(3.14)
+
+print(round_up)
+print(round_down)
+```
