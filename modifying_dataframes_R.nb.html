@@ -1793,9 +1793,57 @@ The following objects are masked from ‘package:base’:
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZG9ncyA8LSByZWFkLmNzdihcImRvZ3MuY3N2XCIpXG5oZWFkKGRvZ3MpXG5gYGAifQ== -->
+<pre class="r"><code>dogs &lt;- read.csv(&quot;dogs.csv&quot;)
+head(dogs)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6OSwic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbNiDDlyA5XSJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJuVlRQVy9iTUJCbFpNdXBqRGdmemRiSjZOVEZRdXMwcWZNeFJFZ1RkQWtRRkNtUXphQWxXaUpNa3k0bHg5bWFzVnVMQU5reWRlalFYOWRma09Rb0h4MkZhQTA4SHZuZVBmbU9KMzMrZUxIVnZHZ1NRbXFrWHZOSXpZY3Q4YitjbjNSNmhOUTlPQ3lST2dsTXZJS2tUZGlZd3pxZ2dVSXJHZzZabkhDWnh4blRTSzVFd3pTanN2MUpUV1dDM0hyRU5VdW9ZTzF6cGpWZjVQclJpQmQwa1NSb1BnTG5LUlYwUEMwWThxK2lNZE04QnVGWXBvTG5XZnRJS1ptVmp5ZGsxZFJ6K0pxVXY4TmRqRHNZOStieDIxK3pMdit5Y2VGN2czbjdHSHNZRC83cmE1WDlFL0lDMEFWMEFHZlhzRnpQTFZaZkFSeWdmdlVQL1Jid0ZmQUJFQUpNQlg4cStuZUE2VzhiZGRQUjc0citFekFBN0ZiMHU0citBOUFIOUxBR2szZmpETmFYZE14eUhHcGd5WUZtekE1dUkyTTh6WXErVUxNK2x6RGxISVdYS0dTd1BsZFdaMDhXTWJEczJxeVMvMFFIbXNwUnYvdjIzWTVMYkx2RWU1Zlljcm9KdEpxRnRpTnpEUjVlZWNOdE80WVh6Ylp0eVdaQ0N4b09OZmpoZE85WWx0V2s0RXFDeWR2RUM2NmFsN1JEckUybHFTVHB4TmxVampwZFI2NU5aR3IrczZUbWFHRnNWUGJCdkFydmdUei83aHBNcGx6YTc4TVhkTUNFZlhMQ0x1MGc0RDdLNndnbm1zdkM5Z2xzSGhhcW9OYlNqSld3VE5rNXVYOEUvRnVIWVIwRUFBQT0ifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["breed"],"name":[1],"type":["chr"],"align":["left"]},{"label":["height_low_inches"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["height_high_inches"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["weight_low_lbs"],"name":[4],"type":["int"],"align":["right"]},{"label":["weight_high_lbs"],"name":[5],"type":["int"],"align":["right"]},{"label":["rank_2016"],"name":[6],"type":["int"],"align":["right"]},{"label":["rank_2015"],"name":[7],"type":["int"],"align":["right"]},{"label":["rank_2014"],"name":[8],"type":["int"],"align":["right"]},{"label":["rank_2013"],"name":[9],"type":["int"],"align":["right"]}],"data":[{"1":"Affenpinscher","2":"9","3":"12","4":"8","5":"12","6":"149","7":"136","8":"144","9":"143","_rn_":"1"},{"1":"Afghan Hound","2":"25","3":"27","4":"50","5":"60","6":"113","7":"100","8":"98","9":"95","_rn_":"2"},{"1":"Airedale Terrier","2":"22","3":"24","4":"45","5":"45","6":"55","7":"53","8":"57","9":"56","_rn_":"3"},{"1":"Akita","2":"26","3":"28","4":"80","5":"120","6":"46","7":"46","8":"46","9":"45","_rn_":"4"},{"1":"Alaskan Malamute","2":"NA","3":"NA","4":"NA","5":"NA","6":"59","7":"54","8":"54","9":"57","_rn_":"5"},{"1":"American English Coonhound","2":"NA","3":"NA","4":"NA","5":"NA","6":"170","7":"166","8":"156","9":"146","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10],"total":[9]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShkb2dzKVxuYGBgIn0= -->
+<pre class="r"><code>summary(dogs)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgIGJyZWVkICAgICAgICAgICBoZWlnaHRfbG93X2luY2hlcyBoZWlnaHRfaGlnaF9pbmNoZXMgd2VpZ2h0X2xvd19sYnMgICB3ZWlnaHRfaGlnaF9sYnMgICAgcmFua18yMDE2ICAgICByYW5rXzIwMTUgICAgICAgIHJhbmtfMjAxNCAgICAgXG4gTGVuZ3RoOjE5OCAgICAgICAgIE1pbi4gICA6IDYuMDAgICAgIE1pbi4gICA6IDguMDAgICAgICBNaW4uICAgOiAgMi4wMCAgIE1pbi4gICA6ICA1LjAwICAgTWluLiAgIDogIDEgICBNaW4uICAgOiAgMS4wMCAgIE1pbi4gICA6ICAxLjAwICBcbiBDbGFzcyA6Y2hhcmFjdGVyICAgMXN0IFF1LjoxMy4wMCAgICAgMXN0IFF1LjoxNS4wMCAgICAgIDFzdCBRdS46IDE4LjAwICAgMXN0IFF1LjogMjUuMDAgICAxc3QgUXUuOiA0OCAgIDFzdCBRdS46IDQ2Ljc1ICAgMXN0IFF1LjogNDYuNzUgIFxuIE1vZGUgIDpjaGFyYWN0ZXIgICBNZWRpYW4gOjE4LjAwICAgICBNZWRpYW4gOjIxLjAwICAgICAgTWVkaWFuIDogNDAuMDAgICBNZWRpYW4gOiA1NS4wMCAgIE1lZGlhbiA6IDk1ICAgTWVkaWFuIDogOTIuNTAgICBNZWRpYW4gOiA5Mi41MCAgXG4gICAgICAgICAgICAgICAgICAgIE1lYW4gICA6MTguMDEgICAgIE1lYW4gICA6MjAuOTkgICAgICBNZWFuICAgOiA0My4wOCAgIE1lYW4gICA6IDU3LjgzICAgTWVhbiAgIDogOTUgICBNZWFuICAgOiA5Mi41MCAgIE1lYW4gICA6IDkyLjUwICBcbiAgICAgICAgICAgICAgICAgICAgM3JkIFF1LjoyMy4wMCAgICAgM3JkIFF1LjoyNy4wMCAgICAgIDNyZCBRdS46IDYwLjAwICAgM3JkIFF1LjogNzUuMDAgICAzcmQgUXUuOjE0MiAgIDNyZCBRdS46MTM4LjI1ICAgM3JkIFF1LjoxMzguMjUgIFxuICAgICAgICAgICAgICAgICAgICBNYXguICAgOjQ4LjAwICAgICBNYXguICAgOjY2LjAwICAgICAgTWF4LiAgIDoxNzUuMDAgICBNYXguICAgOjE5MC4wMCAgIE1heC4gICA6MTg5ICAgTWF4LiAgIDoxODQuMDAgICBNYXguICAgOjE4NC4wMCAgXG4gICAgICAgICAgICAgICAgICAgIE5BJ3MgICA6NDkgICAgICAgIE5BJ3MgICA6NDkgICAgICAgICBOQSdzICAgOjQ5ICAgICAgIE5BJ3MgICA6NDkgICAgICAgTkEncyAgIDo5ICAgICBOQSdzICAgOjE0ICAgICAgIE5BJ3MgICA6MTQgICAgICBcbiAgIHJhbmtfMjAxMyAgICAgXG4gTWluLiAgIDogIDEuMDAgIFxuIDFzdCBRdS46IDQ1LjAwICBcbiBNZWRpYW4gOiA4OS4wMCAgXG4gTWVhbiAgIDogODguOTkgIFxuIDNyZCBRdS46MTMzLjAwICBcbiBNYXguICAgOjE3Ny4wMCAgXG4gTkEncyAgIDoyMSAgICAgIFxuIn0= -->
+<pre><code>    breed           height_low_inches height_high_inches weight_low_lbs   weight_high_lbs    rank_2016     rank_2015        rank_2014     
+ Length:198         Min.   : 6.00     Min.   : 8.00      Min.   :  2.00   Min.   :  5.00   Min.   :  1   Min.   :  1.00   Min.   :  1.00  
+ Class :character   1st Qu.:13.00     1st Qu.:15.00      1st Qu.: 18.00   1st Qu.: 25.00   1st Qu.: 48   1st Qu.: 46.75   1st Qu.: 46.75  
+ Mode  :character   Median :18.00     Median :21.00      Median : 40.00   Median : 55.00   Median : 95   Median : 92.50   Median : 92.50  
+                    Mean   :18.01     Mean   :20.99      Mean   : 43.08   Mean   : 57.83   Mean   : 95   Mean   : 92.50   Mean   : 92.50  
+                    3rd Qu.:23.00     3rd Qu.:27.00      3rd Qu.: 60.00   3rd Qu.: 75.00   3rd Qu.:142   3rd Qu.:138.25   3rd Qu.:138.25  
+                    Max.   :48.00     Max.   :66.00      Max.   :175.00   Max.   :190.00   Max.   :189   Max.   :184.00   Max.   :184.00  
+                    NA&#39;s   :49        NA&#39;s   :49         NA&#39;s   :49       NA&#39;s   :49       NA&#39;s   :9     NA&#39;s   :14       NA&#39;s   :14      
+   rank_2013     
+ Min.   :  1.00  
+ 1st Qu.: 45.00  
+ Median : 89.00  
+ Mean   : 88.99  
+ 3rd Qu.:133.00  
+ Max.   :177.00  
+ NA&#39;s   :21      </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZG9ncyA8LSBkb2dzICU+JVxuICBtdXRhdGUoYXZnX2hlaWdodCA9IChoZWlnaHRfbG93X2luY2hlcyArIGhlaWdodF9oaWdoX2luY2hlcykvMilcbmhlYWQoZG9ncylcbmBgYCJ9 -->
+<pre class="r"><code>dogs &lt;- dogs %&gt;%
+  mutate(avg_height = (height_low_inches + height_high_inches)/2)
+head(dogs)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6MTAsInN1bW1hcnkiOnsiRGVzY3JpcHRpb24iOlsiZGYgWzYgw5cgMTBdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQm5WVHYyL1RRQlIrY2VLVVdFMWIybzBwUWtKaWlVVmIycWEwUXl4K2lBVUpvU0oxc3k3MnhUN0ZPYWRucCtuV2ptd2dKRFltQmdiK09zWk9oWGYydTlTeHdOTG5kLzYrOTZ6M3Zidjc4T3A4M3psM0FLQUpyYVlGVFJ1WFlIODhlOU1mQUxRcy9HaEFDem82WG1IU0RpNTA5aGFpVFVMWEc0KzVuQW1aQlRGWFJLNTc0eWhtc3ZjMm5jdVF1QzFQS0I2eWhQZk91RkppbVd0N0U1R3paVkxDc2dsV3ZtTUptODV6VHZ3amI4cVZDRkI0TGFORVpISHZaWnJLdVBnOXdJYnVaL2dZaW1kNFRQR1E0b3N5WHYvVzc3VWZKaTdybmxMZUNjVUJ4ZFAvMW5VTC93QVBFSHVJUHVMOURiNXV5aEtqcnlOT1NiLzZoLzROY1lFNFFyZ0kzY0d2aXY0Sm9mMGRrSzRkL2F6b1h4QWp4SEZGLzE3UlB5Tjh4SUI2MEhsZmw3NmZyTTVuZUxRNmgrdGI4bjFyZks4Y0NGdXlLYytnUEF5T0lVZUtjN1BoRDJNdW9qajNrM1RoQzRtbkl5TmhtNFFZMzZ2S3h1SytKQmtaZG5OUnliK25PNHJKaWIvM2JQZXdUaHpVaWVkMVlwOEloMTFHZnRsT3pWOUhwUXZYZU5RRHRXanoydlZCQkhoa3pTQU02WVFzWis1WVlUMSszZFZLMXRKWkxsS0pSZFlPYlZXMXVLRnF4T1pjNms3Q2ZoRFA1YVMvVzVPYk14bEJlVE1iaEM3RmRtWHRsRjFZZjJEMUJyZTVqSVEwTjgxTzJJZ241czhodnpSYmcvTW94dUhPbEpDNThZbHM1dVpwemt5SkU2U0pZUXJuY1BjWDc1WlZWMmNFQUFBPSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["breed"],"name":[1],"type":["chr"],"align":["left"]},{"label":["height_low_inches"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["height_high_inches"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["weight_low_lbs"],"name":[4],"type":["int"],"align":["right"]},{"label":["weight_high_lbs"],"name":[5],"type":["int"],"align":["right"]},{"label":["rank_2016"],"name":[6],"type":["int"],"align":["right"]},{"label":["rank_2015"],"name":[7],"type":["int"],"align":["right"]},{"label":["rank_2014"],"name":[8],"type":["int"],"align":["right"]},{"label":["rank_2013"],"name":[9],"type":["int"],"align":["right"]},{"label":["avg_height"],"name":[10],"type":["dbl"],"align":["right"]}],"data":[{"1":"Affenpinscher","2":"9","3":"12","4":"8","5":"12","6":"149","7":"136","8":"144","9":"143","10":"10.5","_rn_":"1"},{"1":"Afghan Hound","2":"25","3":"27","4":"50","5":"60","6":"113","7":"100","8":"98","9":"95","10":"26.0","_rn_":"2"},{"1":"Airedale Terrier","2":"22","3":"24","4":"45","5":"45","6":"55","7":"53","8":"57","9":"56","10":"23.0","_rn_":"3"},{"1":"Akita","2":"26","3":"28","4":"80","5":"120","6":"46","7":"46","8":"46","9":"45","10":"27.0","_rn_":"4"},{"1":"Alaskan Malamute","2":"NA","3":"NA","4":"NA","5":"NA","6":"59","7":"54","8":"54","9":"57","10":"NA","_rn_":"5"},{"1":"American English Coonhound","2":"NA","3":"NA","4":"NA","5":"NA","6":"170","7":"166","8":"156","9":"146","10":"NA","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10],"total":[10]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLg0KDQpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ3RybCtTaGlmdCtFbnRlciouDQoNCmBgYHtyfQ0KcGxvdChjYXJzKQ0KYGBgDQoNCk1vZGlmeWluZyBEYXRhZnJhbWVzOg0KDQpgYGB7cn0NCmxpYnJhcnkoZHBseXIpDQpsaWJyYXJ5KHJlYWRyKQ0KYGBgDQoNCmBgYHtyfQ0KDQpgYGANCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLg0KDQpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ3RybCtTaGlmdCtFbnRlciouDQoNCmBgYHtyfQ0KcGxvdChjYXJzKQ0KYGBgDQoNCk1vZGlmeWluZyBEYXRhZnJhbWVzOg0KDQpgYGB7cn0NCmxpYnJhcnkoZHBseXIpDQpsaWJyYXJ5KHJlYWRyKQ0KYGBgDQoNCmBgYHtyfQ0KZG9ncyA8LSByZWFkLmNzdigiZG9ncy5jc3YiKQ0KaGVhZChkb2dzKQ0Kc3VtbWFyeShkb2dzKQ0KYGBgDQoNCmBgYHtyfQ0KZG9ncyA8LSBkb2dzICU+JQ0KICBtdXRhdGUoYXZnX2hlaWdodCA9IChoZWlnaHRfbG93X2luY2hlcyArIGhlaWdodF9oaWdoX2luY2hlcykvMikNCmhlYWQoZG9ncykNCmBgYA0K</div>
 
 
 

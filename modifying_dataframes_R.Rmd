@@ -19,5 +19,13 @@ library(readr)
 ```
 
 ```{r}
+dogs <- read.csv("dogs.csv")
+head(dogs)
+summary(dogs)
+```
 
+```{r}
+dogs <- dogs %>%
+  mutate(avg_height = (height_low_inches + height_high_inches)/2)
+head(dogs)
 ```
