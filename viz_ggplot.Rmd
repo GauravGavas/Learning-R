@@ -1,0 +1,28 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(dplyr)
+library(readr)
+library(ggplot2)
+```
+
+```{r}
+movies <- read_csv('imdb.csv')
+head(movies)
+```
+
+```{r}
+viz <- ggplot(data=movies, aes(x=imdbRating, y=nrOfWins)) + 
+      geom_smooth() + 
+      geom_point(aes(color=nrOfGenre), alpha=0.5) +
+      labs(title="Movie Ratings Vs Award Wins", 
+           subtitle="From IMDB dataset", x="Movie Rating", y="Number of Award Wins", 
+           color="Number of Genre")
+viz
+```
+
+```{}
+```
