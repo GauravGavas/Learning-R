@@ -3,16 +3,59 @@ title: "R Notebook"
 output: html_notebook
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code.
-
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*.
-
 ```{r}
-plot(cars)
+library(dplyr)
+library(readr)
+library(ggplot2)
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+```{r}
+noaa_data <- read_csv('carbon_dioxde_levels.csv')
+head(noaa_data)
+```
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+```{r}
+noaa_viz <- ggplot(data = noaa_data, aes(x=Age_yrBP, y=CO2_ppmv)) + 
+  geom_line() +
+  labs(title = "Carbon Dioxide Levels From 8,000 to 136 Years BP", 
+       subtitle = "From World Data Center for Paleoclimatology and NOAA Paleoclimatology Program", 
+       x = "Years Before Today (0=1950)",
+       y = "Carbon Dioxide Level (Parts Per Million)")
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+noaa_viz
+```
+
+```{r}
+noaa_viz + scale_x_reverse(lim=c(800000,0))
+```
+
+```{r}
+iac_data <- read_csv('yearly_co2.csv')
+
+head(iac_data)
+```
+
+```{r}
+iac_viz <- ggplot(data = iac_data, aes(x=year, y=data_mean_global)) +
+  geom_line() +
+  labs(title = "Carbon Dioxide Levels over Time",
+       subtitle = "From Institute for Atmospheric and Climate Science (IAC).",
+       x = "Year", y = "Carbon Dioxide Level (Parts Per Million)")
+
+iac_viz
+```
+
+```{r}
+millenia_max <- max(noaa_data$CO2_ppmv)
+```
+
+```{r}
+iac_viz <- ggplot(data = iac_data, aes(x=year, y=data_mean_global)) +
+  geom_line() +
+  labs(title = "Carbon Dioxide Levels over Time",
+       subtitle = "From Institute for Atmospheric and Climate Science (IAC).",
+       x = "Year", y = "Carbon Dioxide Level (Parts Per Million)") +
+  geom_hline(aes(yintercept = millenia_max, linetype = "Historical CO2 Peak before 1950"))
+
+iac_viz
+```
